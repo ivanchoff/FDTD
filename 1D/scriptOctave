@@ -1,0 +1,6 @@
+#!/usr/bin/octave
+data = load("out");
+x=data(:,1);
+t=data(:,2);
+plot(x,t,"linestyle",'-',"marker",'*','-@',grid('on'));
+print -djpg image.jpg

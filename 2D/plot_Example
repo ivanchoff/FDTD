@@ -1,0 +1,9 @@
+#!/usr/bin/gnuplot
+set dgrid3d
+#set pm3d interpolate 5,5
+set pm3d map
+set term png
+set output 'time0.png'
+splot 'out0' using 1:2:3 with pm3d
+set output 'timeT.png'
+splot 'outT' using 1:2:3 with pm3d
